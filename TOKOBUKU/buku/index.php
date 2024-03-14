@@ -5,6 +5,34 @@ $buku = mysqli_query($connect, "SELECT  penerbit.nama, buku.* FROM buku INNER JO
 
 ?>
 
+<?php
+// // require_once "config.php";
+// if (isset($_GET['cari'])) {
+//   $search = $_GET['cari'];
+//   $cari = "SELECT penerbit.nama,  buku.* FROM buku
+//   INNER JOIN penerbit ON buku.penerbit_id = penerbit.id
+//   WHERE nama_buku LIKE '%$search%'";
+//                     
+//                    
+
+//   $buku = mysqli_query($connect, $cari);
+
+//   if (mysqli_num_rows($buku) == 0) {
+//     $error == true;
+//   }
+// } else {
+//   $buku = mysqli_query($connect, "SELECT penerbit.nama, buku.* FROM buku
+                                    
+//  INNER JOIN penerbit ON buku.penerbit_id = penerbit.id
+//  -- WHERE kondisi = 'baru' AND kategori = 'elektronik'
+//  ");
+//                                     
+//                                     
+// }
+
+?>
+
+
 <!doctype html>
 <html lang="en">
   <head>

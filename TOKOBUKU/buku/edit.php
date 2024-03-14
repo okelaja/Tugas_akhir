@@ -2,10 +2,7 @@
 require "../config.php";
 $id = $_GET["id"];
 
-// $buku = mysqli_query($connect, "SELECT penerbit.nama, buku.* 
-// FROM buku 
-// INNER JOIN penerbit ON buku.penerbit_id = penerbit.id 
-// WHERE buku.id = $id");
+
 $buku = mysqli_query($connect, "SELECT * FROM buku WHERE id = '$id'");  
 $penerbit = mysqli_query($connect, "SELECT * FROM penerbit");
 if (isset($_POST["simpan"])) {

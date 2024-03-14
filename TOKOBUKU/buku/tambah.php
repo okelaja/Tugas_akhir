@@ -1,13 +1,8 @@
 <?php
 require "../config.php";
 
-// $buku = mysqli_query($connect, "SELECT  penerbit.nama, buku.* FROM buku INNER JOIN penerbit ON buku.penerbit_id = penerbit.id"); 
-// $buku = mysqli_query($connect, "SELECT * FROM buku");
+
 $terbit = mysqli_query($connect, "SELECT * FROM penerbit");
-
-// tangkap kiriman dari user
-
-
 
 // simpan data nya ke database
 // 1. tombol simpan di klik
@@ -22,7 +17,7 @@ if (isset($_POST["simpan"])) {
     $query = "INSERT INTO buku (kode,kategori,nama_buku,harga,stok,penerbit_id) VALUES ('$kode','$kategori','$nama','$harga','$stok','$penerbit')";
     mysqli_query($connect, $query);
     // 3.redirect halaman ke index.php
-    header('location: index.php');
+    header('location: index.php');   
 
 }
 

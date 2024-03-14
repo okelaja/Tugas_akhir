@@ -1,4 +1,6 @@
-    <nav class="navbar navbar-expand-lg bg-dark text-white">
+
+
+ <nav class="navbar navbar-expand-lg bg-dark text-white">
         <div class="container-fluid">
             <h2 class="pe-5">unibookstore</h2>
             <div class="collapse navbar-collapse" id="navbarSupportedContent ">
@@ -13,8 +15,8 @@
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-light" type="submit" style="color: white;">Search</button>
+                        <input class="form-control me-2" type="search" placeholder="Search by book name..." aria-label="Search">
+                        <button class="btn btn-outline-light" name="cari" type="submit" style="color: white;">Search</button>
                 </form>
             </div>
         </div>
